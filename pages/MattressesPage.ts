@@ -1,5 +1,5 @@
 import { Locator, Page } from "@playwright/test";
-import MattresPage from "./MattresPage.js";
+import MattressPage from "./MattressPage.js";
 
 export default class MattressesPage{
 
@@ -12,9 +12,9 @@ export default class MattressesPage{
         this.shopNowButton = this.mattresElement.getByTestId('mattress_shop_now_btn');
     }
 
-    public async ClickOnTheShopNowButton() : Promise<MattresPage>
+    public async ClickOnTheShopNowButton() : Promise<MattressPage>
     {
         await this.shopNowButton.click();
-        return await new MattresPage(this.page)
+        return new MattressPage(this.page);
     }
 }

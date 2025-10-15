@@ -1,7 +1,7 @@
 import { Locator, Page } from "@playwright/test";
 import CartPage from "./CartPage.js";
 
-export default class MattresPage
+export default class MattressPage
 {
     addToCartButton: Locator;
 
@@ -13,6 +13,6 @@ export default class MattresPage
     public async ClickOnAddToCartButton() : Promise<CartPage>
     {
         await this.addToCartButton.click();
-        return await new CartPage(this.page);
+        return new CartPage(this.page);
     }
 }

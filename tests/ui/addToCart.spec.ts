@@ -5,7 +5,7 @@ import ApplicationUrl from '../../helpers/ApplicationUrl.js';
 test('Add a mattress to the cart', async ({ page }) => {
 
     await page.goto(ApplicationUrl.UI_BASE_URL);
-    await expect(page, `Application's URL is: ${ApplicationUrl.UI_BASE_URL}`).toHaveURL(ApplicationUrl.UI_BASE_URL)
+    await expect(page, `Application's URL is: ${ApplicationUrl.UI_BASE_URL}`).toHaveURL(ApplicationUrl.UI_BASE_URL);
   
     const mainPage = new MainPage(page);
     const mattressesPage = await mainPage.ClickShopNowOnTheMattressesHeadline();

@@ -13,7 +13,7 @@ export default class MainPage{
     public async ClickShopNowOnTheMattressesHeadline() : Promise<MattressesPage>
     {
        await this.mattressesHeadline.click();
-       return await new MattressesPage(this.page);
+       return new MattressesPage(this.page);
     }
 
 }
