@@ -10,7 +10,7 @@ export default class MainPage{
         this.mattressesHeadline = this.page.getByTestId('hover_link_Mattresses').getByRole('link', { name: 'Mattresses' });
     }
 
-    public async HoverOverTheMattressesHeadline() : Promise<MattressesPage>
+    public async ClickShopNowOnTheMattressesHeadline() : Promise<MattressesPage>
     {
        await this.mattressesHeadline.click();
        return await new MattressesPage(this.page);

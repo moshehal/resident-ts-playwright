@@ -10,6 +10,6 @@ export default class CartPage{
 
     public async ValidateCart()
     {
-        expect(await this.cartItems).not.toBeUndefined();
+        expect(await this.cartItems, "Item added to the cart").not.toBeUndefined();
     }
 }
